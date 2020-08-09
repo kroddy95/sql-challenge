@@ -26,7 +26,7 @@ CREATE TABLE "employee" (
     "first_name" VARCHAR   NOT NULL,
     "last_name" VARCHAR   NOT NULL,
     "gender" VARCHAR   NOT NULL,
-    "hire_data" DATE   NOT NULL,
+    "hire_date" DATE   NOT NULL,
     CONSTRAINT "pk_employee" PRIMARY KEY (
         "emp_no"
      )
@@ -52,7 +52,7 @@ CREATE TABLE "department_manager" (
     "dept_no" VARCHAR   NOT NULL,
     "emp_no" INT   NOT NULL,
     CONSTRAINT "pk_department_manager" PRIMARY KEY (
-        "emp_no"
+        "dept_no","emp_no"
      )
 );
 
